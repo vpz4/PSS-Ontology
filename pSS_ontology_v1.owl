@@ -1,0 +1,976 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#"
+     xml:base="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Age_of_patient_at_diagnosis -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Age_of_patient_at_diagnosis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Age_of_the_onset_of_first_symptoms_of_SS -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Age_of_the_onset_of_first_symptoms_of_SS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ethnicity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ethnicity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Gender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Gender"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#status">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Schirmer&apos;s"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#van_Bijsterveld"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#value">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Schirmer&apos;s"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#van_Bijsterveld"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ANA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ANA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Age_of_patient_at_diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Age_of_patient_at_diagnosis"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Age_of_the_onset_of_first_symptoms_of_SS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Age_of_the_onset_of_first_symptoms_of_SS"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#B_cell_monoclonality_in_salivary_biopsy_status -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#B_cell_monoclonality_in_salivary_biopsy_status">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Bence_Jones_proteinuria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Bence_Jones_proteinuria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Biopsies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Biopsies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#C3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#C3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#C4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#C4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CD19 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CD19">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CD3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CD3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CD4 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CD4">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CD8 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CD8">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CNS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#CNS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Chemotherapy_regimens -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Chemotherapy_regimens">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Chisolm_Mason_grading -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Chisolm_Mason_grading">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Comorbidities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Comorbidities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Demographics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Demographics"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Dyspareunia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Dyspareunia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#EQ-5D-3L -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#EQ-5D-3L">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#EQ-VAS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#EQ-VAS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSPRI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSPRI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Education -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Education">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ethnicity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ethnicity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Demographics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#FACIT-F -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#FACIT-F">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Fatigue_VAS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Fatigue_VAS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Demographics"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Glucocorticoids -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Glucocorticoids">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#History_of_cancer_first_degree_relatives -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#History_of_cancer_first_degree_relatives">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#History_of_cancer_patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#History_of_cancer_patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#LDH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#LDH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Loss_of_work_due_to_SS_ever -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Loss_of_work_due_to_SS_ever">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Loss_of_work_due_to_SS_from_the_last_visit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Loss_of_work_due_to_SS_from_the_last_visit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#OSS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#OSS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ocular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Occular_Sicca_VAS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Occular_Sicca_VAS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ocular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ocular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Oral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Oral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Oral_Sicca_VAS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Oral_Sicca_VAS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Other_tissue_biopsies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Other_tissue_biopsies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Biopsies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#PNS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#PNS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#PROFAD-SSI-SF -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#PROFAD-SSI-SF">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Parotid_or_submandibular_swelling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Parotid_or_submandibular_swelling"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Participation_in_pSS_clinical_trials -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Participation_in_pSS_clinical_trials">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Pregnancy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Pregnancy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Radiotherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Radiotherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#SSDDI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#SSDDI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Biopsies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Schirmer&apos;s -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Schirmer&apos;s">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ocular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Smoking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Smoking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Surgery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Surgery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Tests -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Tests"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ultrasound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ultrasound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Tests"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Urine_24_hour_proteinuria -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Urine_24_hour_proteinuria">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Urine_Beta2_microglubin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Urine_Beta2_microglubin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Vaginal_Sicca_VAS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Vaginal_Sicca_VAS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#WPAI-GH -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#WPAI-GH">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#age_of_the_patient_at_the_year_of_biopsy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#age_of_the_patient_at_the_year_of_biopsy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#anemia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#anemia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#anti_SSA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#anti_SSA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#anti_SSB -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#anti_SSB">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#articular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#articular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#association_with_cryoglobulinemic_vasculitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#association_with_cryoglobulinemic_vasculitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#bDMARDs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#bDMARDs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#biological -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#biological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#cDMARDs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#cDMARDs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#clinESSDAI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#clinESSDAI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#conducted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#conducted">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Other_tissue_biopsies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#constitutional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#constitutional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#cryocrit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#cryocrit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#cryoglobulinemia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#cryoglobulinemia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#cutaneous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#cutaneous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#diagnosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#diagnosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Other_tissue_biopsies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#focus_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#focus_score">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#free_serum_light_chains_kappa -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#free_serum_light_chains_kappa">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#free_serum_light_chains_lambda -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#free_serum_light_chains_lambda">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#germinal_centers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#germinal_centers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#glandular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#glandular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#glandular_area -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#glandular_area">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#haematological -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#haematological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#hospital_anxiety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#hospital_anxiety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#hospital_depression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#hospital_depression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Others"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#leukopenia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#leukopenia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lgA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lgA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lgG -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lgG">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lgM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lgM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lymphadenopathy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lymphadenopathy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lymphoepithelial_lesions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lymphoepithelial_lesions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lymphopenia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#lymphopenia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#muscular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#muscular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#neutropenia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#neutropenia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#number_of_foci -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#number_of_foci">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#parotid_and_submandibular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#parotid_and_submandibular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ultrasound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#pulmonary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#pulmonary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#renal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#renal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#rheumatoid_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#rheumatoid_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#salivary_scintigraphy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#salivary_scintigraphy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Oral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#serum_Beta2_microglobulin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#serum_Beta2_microglobulin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#serum_M_component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#serum_M_component">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#serum_albumin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#serum_albumin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#sialography -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#sialography">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Oral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#site -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#site">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Other_tissue_biopsies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#stimulated_salivary_flow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#stimulated_salivary_flow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Oral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#thrombocytopenia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#thrombocytopenia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#total_immunoglobulins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#total_immunoglobulins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Laboratory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#tsDMARDs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#tsDMARDs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#unstimulated_saliva_flow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#unstimulated_saliva_flow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Oral"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#van_Bijsterveld -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#van_Bijsterveld">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Ocular"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#which_salivary_gland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#which_salivary_gland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#whole_score -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#whole_score">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#ESSDAI"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#year_of_biopsy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#year_of_biopsy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vpezoulas/ontologies/2018/0/pSS-ontology#Salivary_gland_biopsy"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
